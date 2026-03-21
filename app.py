@@ -124,7 +124,7 @@ name2 = st.text_input("Enter your partner name", value=st.session_state.name2)
 # -----------------------------------
 # 🔘 Buttons (Calculate + Clear)
 # -----------------------------------
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns([1, 1, 3])
 
 with col1:
     calculate_clicked = st.button("Calculate Love")
