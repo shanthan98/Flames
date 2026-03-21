@@ -128,8 +128,8 @@ with right_col:
         font-size: 14px;
         box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
     ">
-        <h4 style="text-align:center; margin-bottom:10px;">🔥 FLAMES</h4>
-        <hr style="border: 0.5px solid #ffccd5; margin-bottom:10px;">
+        <h4 style="text-align:center; margin-bottom:10px;"> ❤️FLAMES</h4>
+        <hr style="border: 0.5px solid #ffccd5; margin-bottom:7px;">
         F → Friends<br>
         L → Lovers<br>
         A → Affection<br>
