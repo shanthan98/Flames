@@ -5,7 +5,7 @@ from flames import calculate_flames
 # -----------------------------------
 # 🔥 Page Configuration
 # -----------------------------------
-st.set_page_config(page_title="FLAMES Calculator", page_icon="🔥")
+st.set_page_config(page_title="FLAMES Calculator", page_icon="❤️")
 
 # -----------------------------------
 # 🎨 Custom CSS Styling (UI + Background)
@@ -130,7 +130,7 @@ with col1:
     calculate_clicked = st.button("Calculate Love")
 
 with col2:
-    clear_clicked = st.button("🧹 Clear")
+    clear_clicked = st.button("Clear")
 
 # -----------------------------------
 # 🧹 Clear Button Logic
