@@ -57,7 +57,7 @@ p, label {
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # Title
-st.title("🔥 FLAMES Calculator ❤️")
+st.title("🔥 FLAMES Calculator ")
 st.write("Discover your relationship destiny 💕")
 
 # Inputs
@@ -65,18 +65,18 @@ name1 = st.text_input("Enter your name")
 name2 = st.text_input("Enter your partner name")
 
 # Button
-if st.button("💘 Calculate Love"):
+if st.button("Calculate Love"):
     if name1 and name2:
         try:
             result = calculate_flames(name1, name2)
 
-            st.subheader("💖 Results")
+            st.subheader("Results")
             st.write(f"**Name 1:** {result['name1']} (Length: {result['length1']})")
             st.write(f"**Name 2:** {result['name2']} (Length: {result['length2']})")
 
-            st.success(f"🔥 Relationship: {result['result']} 💞")
+            st.success(f"🔥 Relationship: {result['result']} ")
 
         except Exception as e:
             st.error(f"Error: {e}")
     else:
-        st.warning("Please enter both names 💌")
+        st.warning("Please enter both names")
