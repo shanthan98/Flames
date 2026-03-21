@@ -155,10 +155,7 @@ with right_col:
     ">
         <h4 style="text-align:center; margin-bottom:5px;">❤️ FLAMES</h4>
         
-        <hr style="
-            border: 0.5px solid #ffccd5;
-            margin: 5px 0 10px 0;
-        ">
+        <div style="height:1px; background:#ffccd5; margin:8px 0;"></div>
         
         F → Friends<br>
         L → Lovers<br>
