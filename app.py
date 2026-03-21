@@ -144,7 +144,7 @@ with left_col:
 with right_col:
     st.markdown("""
     <div style="
-        margin-top: 40px;
+        margin-top: 35px;
         background: rgba(0, 0, 0, 0.65);
         padding: 20px;
         border-radius: 15px;
