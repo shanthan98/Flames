@@ -146,14 +146,20 @@ with right_col:
     <div style="
         margin-top: 15px;
         background: rgba(0, 0, 0, 0.65);
-        padding: 20px;
+        padding: 18px;
         border-radius: 15px;
         color: #ffd6e0;
         font-size: 14px;
         box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+        line-height: 1.6;
     ">
-        <h4 style="text-align:center;">❤️ FLAMES</h4>
-        <hr style="border: 0.5px solid #ffccd5;">
+        <h4 style="text-align:center; margin-bottom:5px;">❤️ FLAMES</h4>
+        
+        <hr style="
+            border: 0.5px solid #ffccd5;
+            margin: 5px 0 10px 0;
+        ">
+        
         F → Friends<br>
         L → Lovers<br>
         A → Affection<br>
