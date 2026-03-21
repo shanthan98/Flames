@@ -105,22 +105,43 @@ h3 {
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # -----------------------------------
-# 🧱 Layout: Title + FLAMES Info Box
+# 🏷️ Title Section (FULL WIDTH)
+# -----------------------------------
+st.markdown("""
+    <div style="text-align:center; margin-top:20px;">
+        <h1 style="margin-bottom:5px;">FLAMES Calculator</h1>
+        <p style="margin-top:0;">Discover your relationship destiny 💕</p>
+    </div>
+""", unsafe_allow_html=True)
+
+# -----------------------------------
+# 🧱 Layout: Inputs + Legend
 # -----------------------------------
 left_col, right_col = st.columns([3, 1], gap="large")
 
+# -----------------------------------
+# 📝 LEFT SIDE → Inputs + Buttons
+# -----------------------------------
 with left_col:
-    st.markdown("""
-        <div style="margin-top: 20px;">
-            <h1 style="margin-bottom: 5px;">FLAMES Calculator</h1>
-            <p style="margin-top: 0;">Discover your relationship destiny 💕</p>
-        </div>
-    """, unsafe_allow_html=True)
 
+    name1 = st.text_input("Enter your name", key="name1")
+    name2 = st.text_input("Enter your partner name", key="name2")
+
+    col1, col2, col3 = st.columns([1, 1, 3])
+
+    with col1:
+        calculate_clicked = st.button("Calculate Love")
+
+    with col2:
+        st.button("🧹 Clear", on_click=clear_inputs)
+
+# -----------------------------------
+# 📦 RIGHT SIDE → FLAMES Legend
+# -----------------------------------
 with right_col:
     st.markdown("""
     <div style="
-        margin-top: 30px;
+        margin-top: 60px;
         background: rgba(0, 0, 0, 0.65);
         padding: 20px;
         border-radius: 15px;
@@ -128,8 +149,8 @@ with right_col:
         font-size: 14px;
         box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
     ">
-        <h4 style="text-align:center; margin-bottom:10px;"> ❤️FLAMES</h4>
-        <hr style="border: 0.5px solid #ffccd5; margin-bottom:7px;">
+        <h4 style="text-align:center;">❤️ FLAMES</h4>
+        <hr style="border: 0.5px solid #ffccd5;">
         F → Friends<br>
         L → Lovers<br>
         A → Affection<br>
@@ -154,7 +175,7 @@ with col1:
     calculate_clicked = st.button("Calculate Love")
 
 with col2:
-    st.button("🧹 Clear", on_click=clear_inputs)
+    st.button("Clear", on_click=clear_inputs)
 
 # -----------------------------------
 # ❤️ Calculate Logic
