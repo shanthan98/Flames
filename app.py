@@ -105,10 +105,36 @@ h3 {
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # -----------------------------------
-# 🏷️ App Title & Description
+# 🧱 Layout: Title + FLAMES Info Box
 # -----------------------------------
-st.title("FLAMES Calculator")
-st.write("Discover your relationship destiny 💕")
+left_col, right_col = st.columns([3, 1])
+
+# LEFT SIDE (Title + Description)
+with left_col:
+    st.title("FLAMES Calculator")
+    st.write("Discover your relationship destiny 💕")
+
+# RIGHT SIDE (FLAMES Meaning Box)
+with right_col:
+    st.markdown("""
+    <div style="
+        background: rgba(0, 0, 0, 0.6);
+        padding: 18px;
+        border-radius: 15px;
+        color: #ffd6e0;
+        font-size: 14px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    ">
+        <h4 style="text-align:center;">FLAMES</h4>
+        <hr style="border: 0.5px solid #ffccd5;">
+        F → Friends<br>
+        L → Lovers<br>
+        A → Affection<br>
+        M → Marriage<br>
+        E → Enemies<br>
+        S → Siblings
+    </div>
+    """, unsafe_allow_html=True)
 
 # -----------------------------------
 # 📝 Input Fields (with keys)
