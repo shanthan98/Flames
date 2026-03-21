@@ -107,19 +107,10 @@ st.title("FLAMES Calculator")
 st.write("Discover your relationship destiny 💕")
 
 # -----------------------------------
-# 🔁 Session State (for clearing inputs)
+# 📝 Input Fields (with keys)
 # -----------------------------------
-if "name1" not in st.session_state:
-    st.session_state.name1 = ""
-
-if "name2" not in st.session_state:
-    st.session_state.name2 = ""
-
-# -----------------------------------
-# 📝 Input Fields
-# -----------------------------------
-name1 = st.text_input("Enter your name", value=st.session_state.name1)
-name2 = st.text_input("Enter your partner name", value=st.session_state.name2)
+name1 = st.text_input("Enter your name", key="name1")
+name2 = st.text_input("Enter your partner name", key="name2")
 
 # -----------------------------------
 # 🔘 Buttons (Calculate + Clear)
