@@ -133,7 +133,7 @@ with left_col:
         calculate_clicked = st.button("Calculate Love")
 
     with col2:
-        st.button("🧹 Clear", on_click=clear_inputs)
+        st.button("Clear", on_click=clear_inputs)
 
 # -----------------------------------
 # 📦 RIGHT SIDE → FLAMES Legend
