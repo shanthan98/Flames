@@ -7,53 +7,93 @@ st.set_page_config(page_title="FLAMES Calculator", page_icon="")
 # 💖 Custom CSS for background + styling
 page_bg = """
 <style>
+
+/* 🔥 Background with STRONG overlay */
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+/* Remove header */
 [data-testid="stHeader"] {
     background: rgba(0,0,0,0);
 }
 
-[data-testid="stToolbar"] {
-    right: 2rem;
+/* 🔥 Center card (MAIN FIX) */
+.main > div {
+    max-width: 700px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.6);
 }
 
-h1, h2, h3, h4 {
-    color: white !important;
+/* Title */
+h1 {
+    color: #ffccd5 !important;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+/* Subtitle */
+p {
+    color: #f1f1f1 !important;
     text-align: center;
 }
 
-p, label {
-    color: white !important;
-    font-size: 18px;
+/* Labels */
+label {
+    color: #ffd6e0 !important;
+    font-weight: 500;
 }
 
+/* Inputs */
 .stTextInput>div>div>input {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.95);
     color: black;
-    border-radius: 10px;
+    border-radius: 12px;
+    padding: 10px;
 }
 
+/* 🔥 BUTTON FIX (your current issue) */
 .stButton>button {
-    background-color: #ff4b6e;
+    background: linear-gradient(45deg, #ff4b6e, #ff758f);
     color: white;
-    border-radius: 10px;
+    border-radius: 12px;
     height: 3em;
     width: 100%;
     font-size: 18px;
+    font-weight: bold;
+    border: none;
 }
 
+/* Hover effect */
 .stButton>button:hover {
-    background-color: #ff1e4d;
+    background: linear-gradient(45deg, #ff1e4d, #ff4b6e);
     color: white;
 }
+
+/* Results */
+h3 {
+    color: #ffe5ec !important;
+    text-align: center;
+}
+
+/* Success box */
+.stSuccess {
+    background-color: rgba(255, 75, 110, 0.25) !important;
+    color: white !important;
+    border-radius: 10px;
+}
+
 </style>
 """
-
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # Title
