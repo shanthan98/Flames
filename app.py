@@ -8,7 +8,7 @@ st.set_page_config(page_title="FLAMES Calculator", page_icon="🔥")
 page_bg = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url("https://unsplash.com/photos/a-room-filled-with-lots-of-hearts-hanging-from-the-ceiling-MEzqoN8p6C0");
+    background-image: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
