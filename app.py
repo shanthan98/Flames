@@ -191,22 +191,28 @@ st.markdown("---")
 
 st.markdown(
 """
-<div style="text-align:center; margin-top:30px;">
+<div style="text-align:center; margin-top:30px; color:#ffd6e0;">
 
-<p style="font-size:18px; margin-bottom:10px;">Find me on</p>
+<p style="font-size:18px; margin-bottom:12px;">Find me on</p>
 
 <div style="display:flex; justify-content:center; gap:30px; margin-bottom:20px;">
 
 <a href="https://github.com/shanthan98" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="32">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+     width="32"
+     style="filter: brightness(0) invert(1); transition: 0.3s;">
 </a>
 
 <a href="https://www.linkedin.com/in/shanthan-k/" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="32">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+     width="32"
+     style="filter: brightness(0) invert(1); transition: 0.3s;">
 </a>
 
 <a href="https://shanthan-kasula-portfolio.netlify.app/" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width="32">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png"
+     width="32"
+     style="filter: brightness(0) invert(1); transition: 0.3s;">
 </a>
 
 </div>
@@ -215,14 +221,11 @@ st.markdown(
 <img src="https://hitwebcounter.com/counter/counter.php?page=21483820&style=0001&nbdigits=5&type=page&initCount=0"/>
 </div>
 
-<p style="font-size:14px;">
-Copyright ©2026 All rights reserved | This template is made by Shanthan
-
-
+<p style="font-size:14px; color:#ffccd5;">
+© 2026 | Made with ❤️ by Shanthan
 </p>
 
 </div>
 """,
 unsafe_allow_html=True
 )
-        
