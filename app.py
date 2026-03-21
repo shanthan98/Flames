@@ -204,9 +204,7 @@ st.markdown(
 </a>
 
 <a href="https://www.linkedin.com/in/shanthan-k/" target="_blank">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-     width="32"
-     style="filter: brightness(0) invert(1); transition: 0.3s;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="32">
 </a>
 
 <a href="https://shanthan-kasula-portfolio.netlify.app/" target="_blank">
@@ -222,7 +220,7 @@ st.markdown(
 </div>
 
 <p style="font-size:14px; color:#ffccd5;">
-© 2026 | Made with ❤️ by Shanthan
+Copyrights ©2026 All rights reserved | Made with ❤️ by Shanthan
 </p>
 
 </div>
