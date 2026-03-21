@@ -159,12 +159,6 @@ with right_col:
         S → Siblings
     </div>
     """, unsafe_allow_html=True)
-    
-# -----------------------------------
-# 📝 Input Fields (with keys)
-# -----------------------------------
-name1 = st.text_input("Enter your name", key="name1")
-name2 = st.text_input("Enter your partner name", key="name2")
 
 # -----------------------------------
 # 🔘 Buttons (Calculate + Clear)
