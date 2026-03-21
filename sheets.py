@@ -14,7 +14,7 @@ def connect_sheet():
     )
     
     client = gspread.authorize(creds)
-    sheet = client.open("FLAMES Data").sheet1
+    sheet = client.open("FlamesCalc_Project_Data").sheet1
     
     return sheet
 
