@@ -184,3 +184,45 @@ if calculate_clicked:
             st.error(f"Error: {e}")
     else:
         st.warning("Please enter both names")
+        
+# ----------- FOOTER SECTION -----------
+
+st.markdown("---")
+
+st.markdown(
+"""
+<div style="text-align:center; margin-top:30px;">
+
+<p style="font-size:18px; margin-bottom:10px;">Find me on</p>
+
+<div style="display:flex; justify-content:center; gap:30px; margin-bottom:20px;">
+
+<a href="https://github.com/shanthan98" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="32">
+</a>
+
+<a href="https://www.linkedin.com/in/shanthan-k/" target="_blank">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" width="32">
+</a>
+
+<a href="https://shanthan-kasula-portfolio.netlify.app/" target="_blank">
+<img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png" width="32">
+</a>
+
+</div>
+
+<div style="margin-bottom:15px;">
+<img src="https://hitwebcounter.com/counter/counter.php?page=21483820&style=0001&nbdigits=5&type=page&initCount=0"/>
+</div>
+
+<p style="font-size:14px;">
+Copyright ©2026 All rights reserved | This template is made by Shanthan
+
+
+</p>
+
+</div>
+""",
+unsafe_allow_html=True
+)
+        
