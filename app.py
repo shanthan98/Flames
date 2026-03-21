@@ -2,6 +2,10 @@ import streamlit as st
 from sheets import save_to_sheet
 from flames import calculate_flames
 
+def clear_inputs():
+    st.session_state["name1"] = ""
+    st.session_state["name2"] = ""
+
 # -----------------------------------
 # 🔥 Page Configuration
 # -----------------------------------
@@ -121,15 +125,7 @@ with col1:
     calculate_clicked = st.button("Calculate Love")
 
 with col2:
-    clear_clicked = st.button("Clear")
-
-# -----------------------------------
-# 🧹 Clear Button Logic
-# -----------------------------------
-if clear_clicked:
-    st.session_state.name1 = ""
-    st.session_state.name2 = ""
-    st.rerun()
+    st.button("🧹 Clear", on_click=clear_inputs)
 
 # -----------------------------------
 # ❤️ Calculate Logic
