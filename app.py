@@ -114,7 +114,7 @@ if st.button("Calculate Love"):
             st.write(f"**Name 1:** {result['name1']} (Length: {result['length1']})")
             st.write(f"**Name 2:** {result['name2']} (Length: {result['length2']})")
 
-            st.success(f"🔥 Relationship: {result['result']} ")
+            st.success(f" Relationship: {result['result']} ")
 
         except Exception as e:
             st.error(f"Error: {e}")
