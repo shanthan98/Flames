@@ -2,7 +2,7 @@ import streamlit as st
 from flames import calculate_flames
 
 # Page config
-st.set_page_config(page_title="FLAMES Calculator", page_icon="🔥")
+st.set_page_config(page_title="FLAMES Calculator", page_icon="")
 
 # 💖 Custom CSS for background + styling
 page_bg = """
@@ -57,7 +57,7 @@ p, label {
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # Title
-st.title("🔥 FLAMES Calculator ")
+st.title("FLAMES Calculator ")
 st.write("Discover your relationship destiny 💕")
 
 # Inputs
