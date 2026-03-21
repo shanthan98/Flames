@@ -1,4 +1,5 @@
 import streamlit as st
+from sheets import save_to_sheet
 from flames import calculate_flames
 
 # Page config
@@ -120,3 +121,6 @@ if st.button("Calculate Love"):
             st.error(f"Error: {e}")
     else:
         st.warning("Please enter both names")
+        
+# Save to Google Sheets
+save_to_sheet(result)
