@@ -107,26 +107,29 @@ st.markdown(page_bg, unsafe_allow_html=True)
 # -----------------------------------
 # 🧱 Layout: Title + FLAMES Info Box
 # -----------------------------------
-left_col, right_col = st.columns([3, 1])
+left_col, right_col = st.columns([3, 1], gap="large")
 
-# LEFT SIDE (Title + Description)
 with left_col:
-    st.title("FLAMES Calculator")
-    st.write("Discover your relationship destiny 💕")
+    st.markdown("""
+        <div style="margin-top: 20px;">
+            <h1 style="margin-bottom: 5px;">FLAMES Calculator</h1>
+            <p style="margin-top: 0;">Discover your relationship destiny 💕</p>
+        </div>
+    """, unsafe_allow_html=True)
 
-# RIGHT SIDE (FLAMES Meaning Box)
 with right_col:
     st.markdown("""
     <div style="
-        background: rgba(0, 0, 0, 0.6);
-        padding: 18px;
+        margin-top: 30px;
+        background: rgba(0, 0, 0, 0.65);
+        padding: 20px;
         border-radius: 15px;
         color: #ffd6e0;
         font-size: 14px;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
     ">
-        <h4 style="text-align:center;">FLAMES</h4>
-        <hr style="border: 0.5px solid #ffccd5;">
+        <h4 style="text-align:center; margin-bottom:10px;">🔥 FLAMES</h4>
+        <hr style="border: 0.5px solid #ffccd5; margin-bottom:10px;">
         F → Friends<br>
         L → Lovers<br>
         A → Affection<br>
@@ -135,7 +138,7 @@ with right_col:
         S → Siblings
     </div>
     """, unsafe_allow_html=True)
-
+    
 # -----------------------------------
 # 📝 Input Fields (with keys)
 # -----------------------------------
