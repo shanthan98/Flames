@@ -2,6 +2,9 @@ import streamlit as st
 from sheets import save_to_sheet
 from flames import calculate_flames
 
+# -----------------------------------
+# 🧹 Clear Input Function
+# -----------------------------------
 def clear_inputs():
     st.session_state["name1"] = ""
     st.session_state["name2"] = ""
@@ -34,7 +37,7 @@ page_bg = """
 
 /* Center container */
 .main > div {
-    max-width: 700px;
+    max-width: 900px;
     margin: auto;
     background: rgba(0, 0, 0, 0.65);
     padding: 2.5rem;
@@ -77,7 +80,7 @@ label {
     border-radius: 12px;
     height: 3em;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     border: none;
 }
@@ -105,12 +108,12 @@ h3 {
 st.markdown(page_bg, unsafe_allow_html=True)
 
 # -----------------------------------
-# 🏷️ Title Section (FULL WIDTH)
+# 🏷️ Title Section
 # -----------------------------------
 st.markdown("""
     <div style="text-align:center; margin-top:20px;">
-        <h1 style="margin-bottom:5px;">FLAMES Calculator</h1>
-        <p style="margin-top:0;">Discover your relationship destiny 💕</p>
+        <h1>FLAMES Calculator</h1>
+        <p>Discover your relationship destiny 💕</p>
     </div>
 """, unsafe_allow_html=True)
 
@@ -141,7 +144,7 @@ with left_col:
 with right_col:
     st.markdown("""
     <div style="
-        margin-top: 60px;
+        margin-top: 80px;
         background: rgba(0, 0, 0, 0.65);
         padding: 20px;
         border-radius: 15px;
@@ -161,17 +164,6 @@ with right_col:
     """, unsafe_allow_html=True)
 
 # -----------------------------------
-# 🔘 Buttons (Calculate + Clear)
-# -----------------------------------
-col1, col2, col3 = st.columns([1, 1, 3])
-
-with col1:
-    calculate_clicked = st.button("Calculate Love")
-
-with col2:
-    st.button("Clear", on_click=clear_inputs)
-
-# -----------------------------------
 # ❤️ Calculate Logic
 # -----------------------------------
 if calculate_clicked:
@@ -179,16 +171,13 @@ if calculate_clicked:
         try:
             result = calculate_flames(name1, name2)
 
-            # Display results
-            st.subheader(" Results")
+            st.subheader("Results")
             st.write(f"**Name 1:** {result['name1']} (Length: {result['length1']})")
             st.write(f"**Name 2:** {result['name2']} (Length: {result['length2']})")
 
             st.success(f"Relationship: {result['result']}")
 
-            # -----------------------------------
-            # 💾 Save to Google Sheets (ONLY after success)
-            # -----------------------------------
+            # Save to Google Sheets
             save_to_sheet(result)
 
         except Exception as e:
