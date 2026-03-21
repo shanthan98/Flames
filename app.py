@@ -142,17 +142,26 @@ with left_col:
 # 📦 RIGHT SIDE → FLAMES Legend
 # -----------------------------------
 with right_col:
-    with st.container():
-        st.markdown("### ❤️ FLAMES")
-        st.divider()
-        st.markdown("""
-        F → Friends  
-        L → Lovers  
-        A → Affection  
-        M → Marriage  
-        E → Enemies  
+    st.markdown("""
+    <div style="
+        margin-top: 10px;
+        background: rgba(0, 0, 0, 0.65);
+        padding: 20px;
+        border-radius: 15px;
+        color: #ffd6e0;
+        font-size: 14px;
+        box-shadow: 0px 0px 12px rgba(0,0,0,0.5);
+    ">
+        <h4 style="text-align:center;">❤️ FLAMES</h4>
+        <hr style="border: 0.5px solid #ffccd5;">
+        F → Friends<br>
+        L → Lovers<br>
+        A → Affection<br>
+        M → Marriage<br>
+        E → Enemies<br>
         S → Siblings
-        """)
+    </div>
+    """, unsafe_allow_html=True)
 
 # -----------------------------------
 # ❤️ Calculate Logic
