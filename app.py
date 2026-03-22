@@ -216,7 +216,7 @@ st.markdown(
 </div>
 
 <div style="margin-bottom:15px;">
-<img src="https://hitwebcounter.com/counter/counter.php?page=21484206&style=0010&nbdigits=6&type=ip&initCount=0"/>
+<img src="https://hitwebcounter.com/counter/counter.php?page=21484217&style=0022&nbdigits=5&type=page&initCount=42"/>
 </div>
 
 <p style="font-size:14px; color:#ffccd5;">
